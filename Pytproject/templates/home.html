@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>	
+	<style type="text/css">
+		body{
+		
+		background-size: cover;
+		background-attachment: fixed;
+		background-repeat: repeat;
+		}
+		.details{
+			color: red;
+			margin: 1rem;
+		    display: flex;
+		    flex-direction: column;
+		    align-items: center;
+		    justify-content: center;
+		    max-width: 80rem;
+		    font-size: 30px;
+
+		}
+		.explain{
+			   margin: 1rem;
+    		display: flex;
+   			 flex-direction: column;
+    		align-items: center;
+    		justify-content: center;
+    		max-width: 60rem;
+    		font-size: large;
+    		color: red;
+
+
+		}
+		h1{
+			color: blue;
+			position: static;
+			background-color: transparent;
+		}
+		.name,.email,.db,.op{
+	font-size: medium;
+    width: 75%;
+    max-width: 20rem;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    color: white;
+    border: none;
+    border-radius: 0.75rem;
+    padding: 0.75rem 3rem;
+    background-color: rgb(50, 50, 50);
+		}
+	button{
+		font-size: 20px;
+		background-color: red;
+		border-radius: 5px;
+		width: 100%
+		padding:3px;
+	}
+
+	</style>
+	<title>WISHER</title>
+</head>
+<body background="img12.jpg">
+	<h1  id="hea" style=" font-style: bold; font-size: 60px" align="center">Automatic- Wisher</h1>
+	<span class="explain">This website is used for send the wishes for Birthdaya and Anniversary</span>
+
+	<div class="home">
+		<form class="details" method="post" action="/getdata">
+		Enter the Name:<input type="text" placeholder="Name" name="name" class="name">
+		Enter the DOB(MMDD):<input type="text" name="DOB" placeholder="Date of birth" class="db">
+		Enter the Email:<input type="Email" name="email" placeholder="Email" class="email">
+		Enter Your Name:<input type="text" name="send" placeholder="Your name" class="email">
+		Enter the Event:<select class="op" name="event"><option value="Birthday">Birthday</option>
+			<option value="Anniversary">Anniversary</option></select>
+		<button value="Submit" type="Submit" >Submit</button>
+
+
+
+
+		</form>
+	
+	</div>
+
+
+
+</body>
+</html>
